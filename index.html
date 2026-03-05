@@ -4,14 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Noctaria - Parfum</title>
+<title>REYHA – Parfum Oriental</title>
 
-<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-
-/* RESET */
 
 *{
 margin:0;
@@ -20,51 +17,76 @@ box-sizing:border-box;
 }
 
 body{
-font-family:'Poppins', sans-serif;
-background:#07070b;
-color:white;
+font-family:'Poppins',sans-serif;
+background:#f4ead7;
+color:#2b2b2b;
+line-height:1.6;
 scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#f4ead7;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-family:'Playfair Display',serif;
+font-size:28px;
+letter-spacing:3px;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:#2b2b2b;
+font-size:14px;
+}
+
+nav a:hover{
+color:#a67c52;
+}
+
+.nav-btn{
+padding:10px 20px;
+border:1px solid #a67c52;
+border-radius:20px;
+transition:0.3s;
+}
+
+.nav-btn:hover{
+background:#a67c52;
+color:white;
 }
 
 /* HERO */
 
 .hero{
-height:100vh;
+height:90vh;
 display:flex;
 align-items:center;
 justify-content:center;
-text-align:center;
-position:relative;
-overflow:hidden;
-background:radial-gradient(circle at center,#0f0f18,#050507);
+padding:0 10%;
+gap:80px;
 }
 
-.hero-content{
-max-width:900px;
-z-index:2;
-padding:20px;
-}
-
-.hero h1{
-font-family:'Playfair Display', serif;
-font-size:48px;
-margin-top:20px;
-line-height:1.2;
-}
-
-.hero p{
-margin-top:15px;
-font-size:18px;
-opacity:0.9;
-}
-
-.perfume{
-width:230px;
-filter:drop-shadow(0 0 20px rgba(200,100,255,0.3));
+.hero img{
+width:280px;
+filter:drop-shadow(0 20px 30px rgba(0,0,0,0.2));
 animation:float 6s ease-in-out infinite;
 }
-
-/* FLOAT ANIMATION */
 
 @keyframes float{
 0%{transform:translateY(0)}
@@ -72,167 +94,171 @@ animation:float 6s ease-in-out infinite;
 100%{transform:translateY(0)}
 }
 
-/* CTA BUTTON */
+.hero-text h1{
+font-family:'Playfair Display',serif;
+font-size:56px;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:18px;
+margin-bottom:30px;
+max-width:450px;
+}
 
 .cta{
-display:inline-block;
-margin-top:30px;
 padding:14px 35px;
-border-radius:30px;
-background:linear-gradient(45deg,#a855f7,#ec4899);
+background:#a67c52;
 color:white;
 text-decoration:none;
-transition:0.4s;
+border-radius:25px;
+margin-right:10px;
+transition:0.3s;
 }
 
 .cta:hover{
-transform:translateY(-3px);
-box-shadow:0 10px 25px rgba(200,100,255,0.4);
+background:#8b633e;
+}
+
+/* COLLECTION */
+
+.collection{
+padding:120px 10%;
+text-align:center;
+}
+
+.collection h2{
+font-family:'Playfair Display',serif;
+font-size:40px;
+margin-bottom:60px;
+}
+
+.perfume-grid{
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+justify-content:center;
+}
+
+.card{
+width:200px;
+padding:25px;
+border-radius:12px;
+background:white;
+transition:0.4s;
+border:1px solid rgba(0,0,0,0.05);
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+.bottle{
+width:70px;
+height:110px;
+margin:auto;
+border-radius:6px;
+margin-bottom:15px;
+}
+
+.bordeaux{background:#7a2c3a}
+.teal{background:#1f4d4f}
+.pistache{background:#9bbf8a}
+.corail{background:#e07a5f}
+.terra{background:#b45a3c}
+.brown{background:#5c3b2e}
+
+/* NOTES */
+
+.notes{
+padding:120px 10%;
+background:#fff7e8;
+text-align:center;
+}
+
+.notes h2{
+font-family:'Playfair Display',serif;
+font-size:38px;
+margin-bottom:50px;
+}
+
+.notes-grid{
+display:flex;
+gap:40px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.note{
+background:white;
+padding:30px;
+width:240px;
+border-radius:10px;
+border:1px solid rgba(0,0,0,0.05);
+}
+
+/* STORY */
+
+.story{
+padding:120px 20%;
+text-align:center;
+}
+
+.story h2{
+font-family:'Playfair Display',serif;
+font-size:38px;
+margin-bottom:20px;
+}
+
+/* CTA FINAL */
+
+.final{
+text-align:center;
+padding:120px 20px;
+background:#2f1e16;
+color:white;
+}
+
+.final h2{
+font-family:'Playfair Display',serif;
+font-size:42px;
+margin-bottom:30px;
+}
+
+.final .cta{
+background:#d4af37;
+color:#2f1e16;
 }
 
 /* SMOKE EFFECT */
 
 .smoke{
 position:absolute;
-width:100%;
-height:100%;
-background:radial-gradient(circle,rgba(255,255,255,0.15),transparent 60%);
-filter:blur(120px);
-opacity:0.4;
-animation:smokeMove 12s infinite alternate;
+width:120px;
+height:120px;
+background:radial-gradient(circle,rgba(200,200,200,0.5),transparent 70%);
+filter:blur(30px);
+animation:smoke 6s infinite ease-in-out;
 }
 
-@keyframes smokeMove{
-0%{transform:translateY(40px)}
-100%{transform:translateY(-40px)}
-}
-
-/* SECTION */
-
-.section{
-padding:120px 10%;
-}
-
-.container{
-display:flex;
-align-items:center;
-gap:60px;
-flex-wrap:wrap;
-}
-
-.perfume2{
-width:350px;
-border-radius:10px;
-}
-
-.text{
-max-width:500px;
-}
-
-.text h2{
-font-family:'Playfair Display', serif;
-font-size:36px;
-margin-bottom:20px;
-}
-
-/* NOTES */
-
-.notes{
-padding:120px 10%;
-text-align:center;
-}
-
-.notes h2{
-font-family:'Playfair Display', serif;
-font-size:40px;
-margin-bottom:60px;
-}
-
-.notes-grid{
-display:flex;
-gap:30px;
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.note-card{
-background:#0f0f18;
-padding:40px;
-border-radius:12px;
-width:250px;
-transition:0.4s;
-}
-
-.note-card:hover{
-transform:translateY(-8px);
-box-shadow:0 20px 40px rgba(150,80,255,0.2);
-}
-
-/* CTA FINAL */
-
-.cta-section{
-text-align:center;
-padding:140px 20px;
-background:linear-gradient(180deg,#07070b,#0f0f18);
-}
-
-.cta-section h2{
-font-family:'Playfair Display', serif;
-font-size:42px;
-margin-bottom:40px;
-}
-
-/* HERO TEXT ANIMATION */
-
-.fade-up{
-opacity:0;
-transform:translateY(20px);
-animation:fadeUp 1.5s forwards;
-}
-
-.delay{
-animation-delay:0.6s;
-}
-
-.delay2{
-animation-delay:1.2s;
-}
-
-@keyframes fadeUp{
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-
-/* SCROLL REVEAL */
-
-.reveal{
-opacity:0;
-transform:translateY(50px);
-transition:1s;
-}
-
-.reveal.active{
-opacity:1;
-transform:translateY(0);
+@keyframes smoke{
+0%{transform:translateY(0);opacity:0.4}
+50%{transform:translateY(-40px);opacity:0.2}
+100%{transform:translateY(0);opacity:0.4}
 }
 
 /* RESPONSIVE */
 
 @media(max-width:900px){
 
-.hero h1{
-font-size:34px;
-}
-
-.container{
+.hero{
 flex-direction:column;
 text-align:center;
 }
 
-.perfume2{
-width:260px;
+.hero-text h1{
+font-size:40px;
 }
 
 }
@@ -243,46 +269,83 @@ width:260px;
 
 <body>
 
-<header class="hero">
+<nav>
+<div class="logo">REYHA</div>
 
+<ul>
+<li><a href="#">Accueil</a></li>
+<li><a href="#">Parfums</a></li>
+<li><a href="#">Notes</a></li>
+<li><a href="#">Histoire</a></li>
+<li><a href="#" class="nav-btn">Découvrir</a></li>
+</ul>
+</nav>
+
+
+<section class="hero">
+
+<div style="position:relative">
+<img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=900">
 <div class="smoke"></div>
+</div>
 
-<div class="hero-content">
+<div class="hero-text">
 
-<img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=1200" class="perfume">
+<h1>L’Art du Parfum Oriental</h1>
 
-<h1 class="fade-up">
-Un parfum est un souvenir qui flotte dans l’air
-</h1>
-
-<p class="fade-up delay">
-Découvrez une fragrance qui révèle votre présence avant même votre arrivée.
+<p>
+REYHA révèle l’essence des parfums d’Orient.
+Une alchimie de fleurs, d’épices et de bois précieux.
 </p>
 
-<a href="#parfum" class="cta fade-up delay2">
-Découvrir le parfum
-</a>
+<a class="cta">Découvrir les parfums</a>
+<a class="cta">Acheter</a>
 
 </div>
 
-</header>
+</section>
 
 
-<section id="parfum" class="section reveal">
+<section class="collection">
 
-<div class="container">
+<h2>La Collection</h2>
 
-<img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?q=80&w=1000" class="perfume2">
+<div class="perfume-grid">
 
-<div class="text">
+<div class="card">
+<div class="bottle bordeaux"></div>
+<h4>Amber Sultan</h4>
+<p>Ambre – Vanille</p>
+</div>
 
-<h2>Une signature olfactive</h2>
+<div class="card">
+<div class="bottle teal"></div>
+<h4>Oud Mystique</h4>
+<p>Oud – Santal</p>
+</div>
 
-<p>
-Une composition raffinée où les notes florales rencontrent la profondeur du bois
-et la douceur enveloppante de la vanille.
-</p>
+<div class="card">
+<div class="bottle pistache"></div>
+<h4>Rose d’Orient</h4>
+<p>Rose – Musc</p>
+</div>
 
+<div class="card">
+<div class="bottle corail"></div>
+<h4>Safran Royal</h4>
+<p>Safran – Épices</p>
+</div>
+
+<div class="card">
+<div class="bottle terra"></div>
+<h4>Santal Noir</h4>
+<p>Santal – Ambre</p>
+</div>
+
+<div class="card">
+<div class="bottle brown"></div>
+<h4>Musc Impérial</h4>
+<p>Musc – Bois</p>
 </div>
 
 </div>
@@ -290,25 +353,25 @@ et la douceur enveloppante de la vanille.
 </section>
 
 
-<section class="notes reveal">
+<section class="notes">
 
-<h2>Notes olfactives</h2>
+<h2>Notes Olfactives</h2>
 
 <div class="notes-grid">
 
-<div class="note-card">
-<h3>Notes de tête</h3>
-<p>Bergamote<br>Mandarine<br>Poivre rose</p>
+<div class="note">
+<h4>Notes de tête</h4>
+<p>Bergamote<br>Safran<br>Cardamome</p>
 </div>
 
-<div class="note-card">
-<h3>Notes de cœur</h3>
+<div class="note">
+<h4>Notes de cœur</h4>
 <p>Rose<br>Jasmin<br>Fleur d’oranger</p>
 </div>
 
-<div class="note-card">
-<h3>Notes de fond</h3>
-<p>Bois de santal<br>Ambre<br>Vanille</p>
+<div class="note">
+<h4>Notes de fond</h4>
+<p>Oud<br>Ambre<br>Santal</p>
 </div>
 
 </div>
@@ -316,40 +379,26 @@ et la douceur enveloppante de la vanille.
 </section>
 
 
-<section class="cta-section reveal">
+<section class="story">
+
+<h2>L’Héritage REYHA</h2>
+
+<p>
+Inspirée par la tradition orientale, la maison REYHA crée des parfums rares où
+les épices, les fleurs et les bois précieux s’entrelacent pour donner naissance
+à des fragrances profondes et inoubliables.
+</p>
+
+</section>
+
+
+<section class="final">
 
 <h2>Laissez votre empreinte dans l’air</h2>
 
-<a class="cta">Acheter maintenant</a>
+<a class="cta">Découvrir REYHA</a>
 
 </section>
-
-
-<script>
-
-/* SCROLL REVEAL */
-
-function reveal(){
-
-let reveals = document.querySelectorAll(".reveal")
-
-for(let i=0;i<reveals.length;i++){
-
-let windowHeight = window.innerHeight
-let elementTop = reveals[i].getBoundingClientRect().top
-let elementVisible = 100
-
-if(elementTop < windowHeight - elementVisible){
-reveals[i].classList.add("active")
-}
-
-}
-
-}
-
-window.addEventListener("scroll", reveal)
-
-</script>
 
 </body>
 </html>
