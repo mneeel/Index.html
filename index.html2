@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Drop - Collection Exclusive</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial, sans-serif;
+            background:#111;
+            color:white;
+            text-align:center;
+        }
+
+        .hero{
+            padding:100px 20px;
+        }
+
+        h1{
+            font-size:3rem;
+            margin-bottom:20px;
+        }
+
+        p{
+            font-size:1.2rem;
+            max-width:700px;
+            margin:auto;
+            line-height:1.6;
+        }
+
+        .cta{
+            display:inline-block;
+            margin-top:30px;
+            padding:15px 30px;
+            background:white;
+            color:black;
+            text-decoration:none;
+            font-weight:bold;
+            border-radius:8px;
+        }
+
+        .benefits{
+            margin-top:60px;
+        }
+
+        .benefits ul{
+            list-style:none;
+            padding:0;
+        }
+
+        .benefits li{
+            margin:15px 0;
+            font-size:1.1rem;
+        }
+
+        .urgent{
+            color:#ffcc00;
+            font-weight:bold;
+            margin-top:20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<section class="hero">
+
+    <h1>Campagne spéciale -30% aujourd'hui</h1>
+
+    <p>
+        Accédez en exclusivité à notre collection streetwear en édition limitée.
+        Réservez vos pièces favorites avant l'ouverture officielle des ventes.
+    </p>
+
+    <p class="urgent">
+        Stock limité - Offre réservée aux premiers inscrits
+    </p>
+
+    <a href="#" class="cta">
+        Je réserve mon accès VIP
+    </a>
+
+    <div class="benefits">
+        <h2>Pourquoi rejoindre l'offre ?</h2>
+
+        <ul>
+            <li>Accès anticipé à la collection</li>
+            <li>Quantités limitées sur les modèles exclusifs</li>
+            <li>Livraison offerte 48h</li>
+        </ul>
+    </div>
+
+</section>
+
+</body>
+</html>
